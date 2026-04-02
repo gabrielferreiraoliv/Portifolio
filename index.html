@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Ferreira — Engenheiro de Software & Cloud</title>
+  <meta name="description" content="Portfolio de Gabriel Ferreira de Oliveira — Engenheiro de Software Full Stack & Cloud. C#/.NET, React, Node.js, Azure, AWS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">&lt;GF /&gt;</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#experience" class="nav-link">Experiência</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#education" class="nav-link">Formação</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-animate="fade-up">
+        <span class="status-dot"></span> Disponível para oportunidades
+      </div>
+      <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+        Gabriel <span class="text-gradient">Ferreira</span>
+      </h1>
+      <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+        Engenheiro de Software & Cloud <span class="typed-text" id="typedText"></span>
+      </p>
+      <p class="hero-description" data-animate="fade-up" data-delay="300">
+        Full Stack com 3+ anos construindo sistemas web escaláveis,
+        APIs RESTful e soluções cloud de alta disponibilidade.
+      </p>
+      <div class="hero-actions" data-animate="fade-up" data-delay="400">
+        <a href="#projects" class="btn btn-primary">
+          <span>Ver Projetos</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Entrar em contato</span>
+        </a>
+      </div>
+      <div class="hero-stats" data-animate="fade-up" data-delay="500">
+        <div class="stat">
+          <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Anos de Experiência</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projetos Entregues</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Empresas Atendidas</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" data-animate="fade-up" data-delay="600">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll para explorar</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">01 — Sobre mim</span>
+        <h2 class="section-title">Transformando ideias em <span class="text-gradient">soluções digitais</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-animate="fade-up" data-delay="100">
+          <p>
+            Sou um <strong>Engenheiro de Software Full Stack</strong> com paixão por construir
+            sistemas robustos e escaláveis. Com 3 anos de experiência, atuo no desenvolvimento
+            de aplicações web, APIs RESTful, ERPs e dashboards estratégicos.
+          </p>
+          <p>
+            Minha expertise inclui <strong>C#/.NET, JavaScript, React, Node.js e Angular</strong>,
+            combinada com forte atuação em <strong>infraestrutura cloud (AWS e Azure)</strong>,
+            mensageria orientada a eventos, containerização com Docker e fluxos de CI/CD.
+          </p>
+          <p>
+            Atualmente cursando <strong>Engenharia de Software</strong> na Unime e atuando como
+            Engenheiro de Nuvem e Software na <strong>Nodeone Decentralized Cloud</strong>.
+          </p>
+          <div class="about-details">
+            <div class="detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Salvador — BA, Brasil</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-language"></i>
+              <span>Inglês Intermediário</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Eng. de Software — Cursando</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" data-animate="fade-up" data-delay="200">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="code-filename">gabriel.ts</span>
+            </div>
+            <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">gabriel</span> = {
+  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Engineer"</span>,
+  <span class="code-prop">experience</span>: <span class="code-string">"3+ years"</span>,
+  <span class="code-prop">stack</span>: [
+    <span class="code-string">"C#/.NET"</span>, <span class="code-string">"React"</span>,
+    <span class="code-string">"Node.js"</span>, <span class="code-string">"Angular"</span>,
+    <span class="code-string">"Azure"</span>, <span class="code-string">"AWS"</span>,
+    <span class="code-string">"Docker"</span>, <span class="code-string">"PostgreSQL"</span>
+  ],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building scalable
+    cloud solutions"</span>,
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">02 — Experiência</span>
+        <h2 class="section-title">Onde já <span class="text-gradient">contribuí</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Engenheiro de Nuvem e Software</h3>
+                <p class="timeline-company">Nodeone Decentralized Cloud</p>
+              </div>
+              <span class="timeline-date">ago/2025 — Presente</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Projeto e otimização de soluções escaláveis em AWS e Azure com alta disponibilidade</li>
+              <li>Arquitetura orientada a eventos com Azure Service Bus</li>
+              <li>Gerenciamento de VMs e containers com Proxmox e Docker</li>
+              <li>Pipelines de CI/CD com automação de deploys produtivos</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AWS</span><span>Azure</span><span>Docker</span><span>Proxmox</span><span>CI/CD</span><span>Service Bus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-up" data-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desenvolvedor Full Stack</h3>
+                <p class="timeline-company">Objetiva Soluções · Linhares, ES</p>
+              </div>
+              <span class="timeline-date">out/2024 — jul/2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Evolução do ERP "Objetiva Web" com C#/.NET, JavaScript, HTML5 e Bootstrap</li>
+              <li>Criação de APIs RESTful e integrações entre sistemas</li>
+              <li>Dashboards de dados estratégicos e automação de cálculos fiscais</li>
+              <li>Configuração e manutenção de bancos de dados cloud</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>C#/.NET</span><span>JavaScript</span><span>SQL Server</span><span>Bootstrap</span><span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-up" data-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Estagiário de Desenvolvimento</h3>
+                <p class="timeline-company">BTS Brasil · Lauro de Freitas, BA</p>
+              </div>
+              <span class="timeline-date">abr/2024 — ago/2024</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Arquitetura do Sistema de Riscos de Engenharia (PCMSO)</li>
+              <li>Desenvolvimento do Sistema de Risco Psicossocial</li>
+              <li>Responsável por frontend, backend e integração com banco de dados</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Full Stack</span><span>PostgreSQL</span><span>React</span><span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-up" data-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desenvolvedor Full Stack (Freelancer)</h3>
+                <p class="timeline-company">Projetos Independentes</p>
+              </div>
+              <span class="timeline-date">abr/2022 — abr/2024</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Plataformas de e-commerce e sistemas de gestão</li>
+              <li>Soluções escaláveis com React, Node.js e PostgreSQL</li>
+              <li>Manutenção contínua e suporte técnico a clientes</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>E-commerce</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">03 — Skills</span>
+        <h2 class="section-title">Meu <span class="text-gradient">arsenal técnico</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-animate="fade-up">
+          <div class="skill-category-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-microsoft"></i>
+                <span>C# / .NET</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-server"></i>
+                <span>REST APIs</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-animate="fade-up" data-delay="100">
+          <div class="skill-category-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-angular"></i>
+                <span>Angular</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-animate="fade-up" data-delay="200">
+          <div class="skill-category-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-microsoft"></i>
+                <span>Azure</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-animate="fade-up" data-delay="300">
+          <div class="skill-category-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Banco de Dados</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-database"></i>
+                <span>SQL Server</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-level="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="soft-skills" data-animate="fade-up" data-delay="400">
+        <h3 class="soft-skills-title">Soft Skills</h3>
+        <div class="soft-skills-grid">
+          <div class="soft-skill">
+            <i class="fas fa-rocket"></i>
+            <span>Proatividade</span>
+          </div>
+          <div class="soft-skill">
+            <i class="fas fa-users"></i>
+            <span>Trabalho em Equipe</span>
+          </div>
+          <div class="soft-skill">
+            <i class="fas fa-book-open"></i>
+            <span>Aprendizado Contínuo</span>
+          </div>
+          <div class="soft-skill">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Resolução de Problemas</span>
+          </div>
+          <div class="soft-skill">
+            <i class="fas fa-bolt"></i>
+            <span>Autonomia</span>
+          </div>
+          <div class="soft-skill">
+            <i class="fas fa-comments"></i>
+            <span>Comunicação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">04 — Projetos</span>
+        <h2 class="section-title">Trabalhos em <span class="text-gradient">destaque</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-animate="fade-up">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-truck-moving"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://www.movezausa.com/" target="_blank" rel="noopener" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Moveza USA</h3>
+            <p>Plataforma de serviços de mudança nos EUA com sistema de cotação online e gestão de operações logísticas.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>Full Stack</span>
+            </div>
+            <a href="https://www.movezausa.com/" target="_blank" rel="noopener" class="project-cta">
+              Visitar site <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-animate="fade-up" data-delay="100">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-passport"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://expatflow.app/" target="_blank" rel="noopener" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>ExpatFlow</h3>
+            <p>Aplicação para gestão de processos de expatriação, facilitando documentação e acompanhamento de vistos.</p>
+            <div class="project-tags">
+              <span>Web App</span><span>SaaS</span><span>Full Stack</span>
+            </div>
+            <a href="https://expatflow.app/" target="_blank" rel="noopener" class="project-cta">
+              Visitar site <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-animate="fade-up" data-delay="200">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="http://escaparatesdigitales.com/" target="_blank" rel="noopener" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Escaparates Digitales</h3>
+            <p>Plataforma de vitrines digitais para negócios, com sistema de gestão de conteúdo e exposição de produtos.</p>
+            <div class="project-tags">
+              <span>E-commerce</span><span>CMS</span><span>Full Stack</span>
+            </div>
+            <a href="http://escaparatesdigitales.com/" target="_blank" rel="noopener" class="project-cta">
+              Visitar site <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-animate="fade-up" data-delay="300">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://lovora.es/" target="_blank" rel="noopener" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Lovora</h3>
+            <p>Plataforma digital espanhola com experiência de usuário premium e design moderno responsivo.</p>
+            <div class="project-tags">
+              <span>React</span><span>UI/UX</span><span>Full Stack</span>
+            </div>
+            <a href="https://lovora.es/" target="_blank" rel="noopener" class="project-cta">
+              Visitar site <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">05 — Formação</span>
+        <h2 class="section-title">Educação & <span class="text-gradient">Certificações</span></h2>
+      </div>
+      <div class="education-grid">
+
+        <div class="edu-card edu-main" data-animate="fade-up">
+          <div class="edu-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-type">Graduação</span>
+            <h3>Bacharelado em Engenharia de Software</h3>
+            <p class="edu-institution">Unime — Lauro de Freitas</p>
+            <p class="edu-period">fev/2024 — jun/2027 · Cursando</p>
+          </div>
+        </div>
+
+        <div class="edu-card" data-animate="fade-up" data-delay="100">
+          <div class="edu-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-type">Formação Completa</span>
+            <h3>Programação Full Stack</h3>
+            <p class="edu-institution">Rocketseat</p>
+            <p class="edu-period">abr/2022 — dez/2024 · Concluído</p>
+          </div>
+        </div>
+
+        <div class="edu-card" data-animate="fade-up" data-delay="200">
+          <div class="edu-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-type">Curso · 100h</span>
+            <h3>Explorer Full Stack</h3>
+            <p class="edu-institution">HTML, CSS, JS, React, Node.js, Git</p>
+            <p class="edu-period">nov/2024</p>
+          </div>
+        </div>
+
+        <div class="edu-card" data-animate="fade-up" data-delay="300">
+          <div class="edu-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-type">Curso · 100h</span>
+            <h3>Formação em C# e Arquitetura de Software</h3>
+            <p class="edu-institution">C#, Docker, BD Relacionais, DDD</p>
+            <p class="edu-period">abr/2025</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">06 — Contato</span>
+        <h2 class="section-title">Vamos <span class="text-gradient">conversar?</span></h2>
+        <p class="section-subtitle">Estou aberto a novas oportunidades e desafios. Entre em contato!</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:gabi568gabi@gmail.com" class="contact-card" data-animate="fade-up">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p>gabi568gabi@gmail.com</p>
+        </a>
+        <a href="tel:+5571993873782" class="contact-card" data-animate="fade-up" data-delay="100">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Telefone</h3>
+          <p>(71) 99387-3782</p>
+        </a>
+        <a href="https://linkedin.com/in/gabriel-ferreira-9579352aa" target="_blank" rel="noopener" class="contact-card" data-animate="fade-up" data-delay="200">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>Gabriel Ferreira</p>
+        </a>
+        <a href="https://github.com/gabrielferreiraoliv" target="_blank" rel="noopener" class="contact-card" data-animate="fade-up" data-delay="300">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>gabrielferreiraoliv</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; 2026 Gabriel Ferreira. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/gabriel-ferreira-9579352aa" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:gabi568gabi@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/gabrielferreiraoliv" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
